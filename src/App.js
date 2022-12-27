@@ -1,22 +1,22 @@
 import "./App.css";
-import Example from "./render-props/Example";
+import Favorite from "./Favorite";
+import Menu from "./Menu";
 
 function App() {
   return (
     <div className="App">
-      <Example
-        render={function (number) {
-          return (
-            <nav>
-              <ul>
-                {number.map((a) => (
-                  <li>{a}</li>
-                ))}
-              </ul>
-            </nav>
-          );
-        }}
-      />
+      <Menu />
+      <br />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
+      <Favorite />
     </div>
   );
 }
